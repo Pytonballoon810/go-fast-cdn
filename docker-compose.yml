@@ -2,6 +2,7 @@ services:
   server:
     image: go-fast-cdn
     build: .
+    restart: unless-stopped
     ports:
       - "8070:8080"
     volumes:
